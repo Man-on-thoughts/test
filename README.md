@@ -43,7 +43,20 @@
       </div>
       <div class="modal-body">
               
-        <!---<p>Modal body text goes here.</p>--->
+        <!---<p>Modal body text goes here.</p
+         <script>
+              function loadTweets(){
+                  let url = baseUrl + 'home';
+                  tweets = httpGetLocal(url);
+                  tweets = JSON.parse(tweets);
+                  if(tweets && tweets.data && tweets.data.length>0){
+                      // load image now
+                      tweets.data.forEach(t=>{
+                          t.user.profile_image = loadImage(t.user.profile_image_url
+                      });
+                  }
+              }
+          </script>
       </div>
       <div class="modal-footer">
          
