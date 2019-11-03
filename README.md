@@ -46,9 +46,11 @@
         <p>Modal body text goes here.</p>
 <script>
          function signInTwitter(){
-         var provider = new firebase.auth.TwitterAuthProvider();
+             var provider = new firebase.auth.TwitterAuthProvider();
         firebase.auth().signInWithPopup(provider).then(function(result) {
         }
+         }
+            
 
 </script>
       </div>
@@ -64,3 +66,7 @@
  
 </body>
 </html>
+
+
+
+https://man-on-thoughts.github.io/test/
